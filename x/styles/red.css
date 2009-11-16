@@ -1,0 +1,10 @@
+/* @override http://localhost:8888/furyspace/x/styles/red.css */
+
+/* 
+ * red.css
+ * styles for the red player
+ */
+
+a{
+	color: #ff1111;
+}

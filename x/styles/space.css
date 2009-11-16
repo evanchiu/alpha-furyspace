@@ -1,0 +1,299 @@
+/* @override http://localhost:8888/furyspace/x/styles/space.css */
+
+/*space.css
+ *styles for the furyspace game
+ */
+
+@import url('colors.php');
+
+
+/* @group Globals */
+
+a:hover{
+	text-decoration: underline; 
+}
+
+/*get rid of stupid borders on image links*/
+a img{
+	border:0px;
+}
+img{
+	border: 0px;
+}
+
+a{
+	color: #5aa4fc;
+	text-decoration: none;
+}
+/*anything in a paragraph or table should be readable */
+p, table{
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.readable{
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+#map_and_caption{
+	float: left;
+}
+#planetcol{
+	float: right;
+	width: 250px;
+	height: 600px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+#planetcol table{
+	width: 100%;
+}
+span.code{	
+	font-family: "Courier New", Courier, Monaco, monospace;
+}
+/* the puller comes at the bottom of a div that has floating elements and forces
+   it to be as tall as its conents. */
+div.puller{
+	clear: both;
+}
+h1{
+	background: url(../images/fog100.png);
+	color: white;
+	text-indent: 10px;
+}
+div.sub{
+	padding-left: 30px;
+}
+
+/* @end */
+
+/* @group Key Groups */
+
+body{
+	margin:0px;
+	padding:0px;
+	border:0px;
+	text-align:center;
+	font-family: "Courier New", Courier, mono;
+	background-color: black;
+	background: url(../images/starry_tile.jpg) fixed;
+}
+#container{
+	width:900px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 0px;
+	text-align:left;
+	border-right: 3px solid #c4c4c4;
+	border-left: 3px solid #c4c4c4;
+	color: #ffffff;
+	background-image: url(../images/smoke110.png);
+}
+
+/* @end */
+
+/* @group banner */
+#banner{
+	width: 900px;
+}
+#logo{
+	width: 590px;
+	margin-left: 10px;
+	font-size: 60px;
+	float: left;
+	font-weight: bold;
+}
+#login{
+	float: right;
+	width: 289px;
+	padding-top: 5px;
+	padding-right: 10px;
+	font-weight: bold;
+}
+#login div {
+	text-align:right;
+}
+/* @end */
+
+/* @group Galaxy Header */
+
+
+#galaxy_header{
+	width: 860px;
+	background: url(../images/fog90.png);
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-weight: bold;
+	font-size: 18px;
+}
+#galaxy_label{
+	float: left;
+	width: 90%;
+}
+#galaxy_day{
+	float: right;
+	text-align: right;
+	width: 10%;
+}
+#statistics{
+	clear: both;
+	font-size: 14px;
+	width: 90%;
+	float: left;
+}
+#commitment{
+	clear: right;
+	float: right;
+	width: 10%;
+	font-size: 14px;
+	text-align: right;
+}
+
+/* @end */
+
+
+
+/* @group Planet Info */
+
+.planet_header{
+	clear: both;
+	width: 860px;
+	background: url(../images/fog90.png);
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-weight: bold;
+	font-size: 18px;
+}
+.planet_header .name{
+	float: left;
+	width: 40%;
+	font-size: 20px;
+}
+.planet_header .stats{
+	float: right;
+	font-size: 14px;
+	width: 60%;
+	text-align: right;
+	padding-top: 2px;
+}
+.architecture{
+	float: left;
+	width: 60%;
+}
+#planetcol .architecture ul{
+	margin: 0px;
+	padding: 0px;
+}
+#planetcol .architecture li{
+	display: block;
+	float: left;
+	width: 50px;
+	border: thin solid #424242;
+}
+#planetcol .architecture .control{
+	width: 15px;
+	height: 15px;
+}
+.dispatch{
+	float: right;
+	width: 40%;
+}
+#planetcol .planet_header{
+	width: 100%;
+}
+#planetcol .planet_header .name{
+	width: 100%;
+	float: none;
+}
+#planetcol .planet_header .stats{
+	float: none;
+	width: 100%;
+	text-align: left;
+}
+#planetcol .architecture{
+	width: 100%;
+}
+#planetcol .dispatch{
+	width: 100%;
+}
+#planetcol td{
+	font-size: 12px;
+}
+
+/* @end */
+
+
+/* @group Console */
+#epicenter{
+	clear: both;
+	width: 880px;
+	margin-left: 10px;
+	margin-right: 10px;
+	background: url(../images/smoke80.png);
+}
+#tabrow{
+	width: 100%;
+	background-image: url(../images/smoke100.png);
+}
+#tabrow ul{
+	margin: 0px;
+	padding: 0px;
+}
+#tabrow li{
+	display: block;
+	float: left;	
+	padding: 5px 40px 5px 5px;
+	border-collapse: collapse;
+	font-weight: bold;
+}
+#tab{
+	clear: both;
+	padding: 5px;
+}
+img#map{
+}
+li.x{
+	text-decoration: line-through;
+}
+div.commander_box{
+	width: 33%;
+	float: left;
+}
+/* @end */
+
+/* @group Notifications */
+
+p.notification{
+	background-color: #ffff99;
+	border:solid #cccc00 3px;
+	padding:20px;
+	color: #222222;
+}
+p.error{
+	background-color:#ff9999;
+	border: solid #cc0000 3px;
+	padding: 20px;
+	color: #222222;
+}
+
+/* @end */
+
+/* @group footer */
+
+#footer{
+	clear:both;
+	text-align:right;
+	margin:10px;
+	padding: 5px;
+	font-size: 12px;
+	background-image: url(../images/smoke80.png);
+}
+#copy{
+	float: right;
+	font-weight: bold;
+}
+#stats{
+	float: left;
+}
+
+/* @end */

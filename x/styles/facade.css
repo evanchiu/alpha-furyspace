@@ -1,0 +1,21 @@
+/*facade.css
+  a facade for the main furyspace.com domain while I work on the game*/
+
+body {
+	font-weight: bold;
+	font-family: "Courier New", Courier, Monaco, monospace;
+	color: #e6e6e6;
+	background-color: #333333;
+}
+
+a:link {
+	color: #66ccff;
+}
+
+a:hover {
+	text-decoration: overline;
+}
+
+a:visited {
+	color: #cc66ff;
+}

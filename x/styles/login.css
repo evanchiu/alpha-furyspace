@@ -1,0 +1,9 @@
+/* login.css
+ * extra styles for the login page
+ */
+ 
+#login{
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+}
