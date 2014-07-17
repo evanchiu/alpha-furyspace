@@ -6,7 +6,7 @@ Furyspace is a small group, space-themed strategy game. The play is all online, 
 The is the initial PHP5 implementation of Furyspace, [alpha.furyspace.com](http://alpha.furyspace.com)
 
 Vagrant Setup
-=============
+-------------
 
 1. Install [Vagrant](http://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/)
 1. Start up machine
@@ -19,10 +19,14 @@ Vagrant Setup
 1. New games can be created using the evchiu@gmail.com account
 
 Alternate Setup
-===============
+---------------
 
 1. Any [*amp](http://en.wikipedia.org/wiki/List_of_AMP_packages) setup will work
 1. Make sure php has access to the GD (graphics) libraries, and short_open_tag is On
 1. Create a mysql database and load the schema from x/db/furyspace.sql
 1. Update the configuration parameters in configuration.php
 1. Add a code into codes, use it to register
+
+License
+-------
+MIT
