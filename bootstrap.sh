@@ -10,16 +10,16 @@ INIT_CODE="furious"
 sudo debconf-set-selections <<< "mysql-server mysql-server/root_password password $MYSQL_ROOT_PASSWORD"
 sudo debconf-set-selections <<< "mysql-server mysql-server/root_password_again password $MYSQL_ROOT_PASSWORD"
 
-# Install lamp
+# Install lamp and required libraries
 apt-get install -y lamp-server^ php5-gd
 
 # Replace webroot with vagrant link
 rm -rf /var/www/html
-ln -fs /vagrant /var/www/html
+ln -fs /vagrant/web /var/www/html
 
 # Configure database: create, load schema, add initial code
 echo "create database $DATABASE" | mysql --password="$MYSQL_ROOT_PASSWORD"
-mysql --password="$MYSQL_ROOT_PASSWORD" $DATABASE < /vagrant/x/db/furyspace.sql
+mysql --password="$MYSQL_ROOT_PASSWORD" $DATABASE < /vagrant/db/furyspace.sql
 echo "insert into codes values (\"$INIT_CODE\")" | mysql --password="$MYSQL_ROOT_PASSWORD" $DATABASE
 
 # Allow short open tags in php.ini and restart apache

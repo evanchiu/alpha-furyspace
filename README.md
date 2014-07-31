@@ -22,10 +22,10 @@ Alternate Setup
 ---------------
 
 1. Any [*amp](http://en.wikipedia.org/wiki/List_of_AMP_packages) setup will work
-1. Make sure php has access to the GD (graphics) libraries, and short_open_tag is On
-1. Create a mysql database and load the schema from x/db/furyspace.sql
-1. Update the configuration parameters in configuration.php
-1. Add a code into codes, use it to register
+1. Make sure PHP has access to the GD (graphics) libraries, and `short_open_tag` is `On`
+1. Create a MySQL database and load the schema from `db/furyspace.sql`
+1. Update the configuration parameters in `web/configuration.php`
+1. Add a code into the `codes` table, use it to register
 
 License
 -------
