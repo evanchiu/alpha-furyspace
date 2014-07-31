@@ -128,8 +128,7 @@
 		}		
 	}
 	
-	//for now only Evan can create new galaxies
-	if(in_array($email, array('evan@evanchiu.com', 'evchiu@gmail.com'))){
+	if(Configuration::is_administrator($email)){
 ?>
 	<p>Create a <a href = "creategamePage.php">New Galaxy</a> or do <a href = "adminPage.php">administrative</a> tasks?</p>
 <?php

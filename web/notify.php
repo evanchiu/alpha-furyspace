@@ -9,7 +9,7 @@
 			$to = $email;
 			$subject = "New day in $galaxyname";
 			$header = "From: Furyspace Notification <notifications@alpha.furyspace.com>\r\n"
-				. 'Reply-To: evchiu@gmail.com' . "\r\n";
+				. 'Reply-To: ' . Configuration::get_reply() . "\r\n";
 			$message = "Good Morning, $name!\n"
 				. "It is now day $day in $galaxyname.\n"
 				. "http://alpha.furyspace.com/mapPage.php?g=$galaxyid\n\n"
@@ -23,7 +23,7 @@
 			$to = $email;
 			$subject = "$galaxyname, the newest furyspace";
 			$header = "From: Furyspace Notification <notifications@alpha.furyspace.com>\r\n"
-				. 'Reply-To: Evan <evchiu@gmail.com>' . "\r\n";
+				. 'Reply-To: ' . Configuration::get_reply() . "\r\n";
 			$message = "Hello!\n"
 				. "You've been invited to command fleets in a brand new furyspace, $galaxyname!\n"
 				. "http://alpha.furyspace.com/setupPage.php?g=$galaxyid\n\n"
@@ -37,7 +37,7 @@
 			$to = $email;
 			$subject = "Destruction in $galaxyname";
 			$header = "From: Furyspace Notification <notifications@alpha.furyspace.com>\r\n"
-				. 'Reply-To: evchiu@gmail.com' . "\r\n";
+				. 'Reply-To: ' . Configuration::get_reply() . "\r\n";
 			$message = "My Regrets, $name,\n"
 				. "$killername invaded your home planet in $galaxyname.\n"
 				. "http://alpha.furyspace.com/mapPage.php?g=$galaxyid\n\n"
@@ -51,7 +51,7 @@
 			$to = $email;
 			$subject = "Victory in $galaxyname";
 			$header = "From: Furyspace Notification <notifications@alpha.furyspace.com>\r\n"
-				. 'Reply-To: evchiu@gmail.com' . "\r\n";
+				. 'Reply-To: ' . Configuration::get_reply() . "\r\n";
 			$message = "Congratulations, $name!\n"
 				. "You have conquered $galaxyname.\n"
 				. "http://alpha.furyspace.com/mapPage.php?g=$galaxyid\n\n"
@@ -65,7 +65,7 @@
 			$to = $email;
 			$subject = "$victor conquered $galaxyname";
 			$header = "From: Furyspace Notification <notifications@alpha.furyspace.com>\r\n"
-				. 'Reply-To: evchiu@gmail.com' . "\r\n";
+				. 'Reply-To: ' . Configuration::get_reply() . "\r\n";
 			$message = "Hello, $name!\n"
 				. "$victor conquered $galaxyname.\n"
 				. "http://alpha.furyspace.com/mapPage.php?g=$galaxyid\n\n"

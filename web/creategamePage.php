@@ -4,7 +4,13 @@
 	session_start();
 	require_once('global.php');
 	Controller::assert_login();
-	
+
+	$email = $_SESSION['email'];
+	if(!Configuration::is_administrator($email)){
+		Controller::error(705, "Admins only, please return to the " .
+							   "[<a href = \"homePage.php\">home</a>]");
+	}
+
 	if(isset($_POST['action'])){
 		if($_POST['action'] == 'create'){
 			Controller::create_game();

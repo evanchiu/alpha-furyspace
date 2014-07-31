@@ -14,9 +14,9 @@ Vagrant Setup
   vagrant up
 ```
 1. Once the virutal machine starts up, it should be accessible at [localhost:1080](http://localhost:1080/)
-1. The registration code 'furious' has been added so you can create the first user, using my email address, evchiu@gmail.com
+1. The registration code 'furious' has been added so you can create the first user, using the default, commander@furyspace.com, or add your own in `web/configuration.php`
 1. Once that account exists, other accounts can be added by using administrative tasks / add codes to add more alpha codes, allowing other accounts to register
-1. New games can be created using the evchiu@gmail.com account
+1. New games can be created by administrators
 
 Alternate Setup
 ---------------

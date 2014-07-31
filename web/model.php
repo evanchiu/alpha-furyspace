@@ -1,8 +1,6 @@
 <?php
-  //model.php
-  //the model gets data from whatever data source I'm using, and may prepare it basically for the controller
-  //Author: Evan G Chiu
-  //Date: January 10, 2009
+//model.php
+//the model gets data from whatever data source I'm using, and may prepare it basically for the controller
 
 class Model{
 

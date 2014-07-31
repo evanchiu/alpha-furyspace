@@ -1,8 +1,6 @@
 <?php
 //view.php
 //contains functions to print XHTML for the application
-//Author: Evan G Chiu
-//Date: May 29, 2008
 
 class View{
 

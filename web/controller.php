@@ -1,8 +1,6 @@
 <?php
 //controller.php
 //the main controller for the application
-//Author: Evan G Chiu
-//Date: May 12, 2008
 
 require_once('global.php');
 

@@ -6,11 +6,9 @@
 	Controller::assert_login();
 	
 	$email = $_SESSION['email'];
-	$admins = array('evchiu@gmail.com', 'evan@evanchiu.com'); //Config::get_admins();
-	if(!in_array($email, $admins)){
-		Controller::error(705, "So, uh, now you know that I have some admin tools on here. " .
+	if(!Configuration::is_administrator($email)){
+		Controller::error(705, "Admins only, please return to the " .
 							   "[<a href = \"homePage.php\">home</a>]");
-
 	}
 	
 	$data['email'] = "Administrator";
